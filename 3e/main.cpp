@@ -7,20 +7,32 @@
 std::string encrypt(std::string str, int offset)
 {
     str.erase(std::remove_if(str.begin(), str.end(), isspace), str.end());
-    for (int i = 0; i < str.length(); i++)
+    for (unsigned int i = 0; i < str.length(); i++)
     {
         // For every character in the string, add the offset, looping
         // around the alphabet if need be.
-        
-        if (str[i] != ' ')
-            str[i] = str[i] + 1;
+        // 97 = a, 122 = z
+        if (str[i] + offset > 122)
+            str[i] += offset - 26;
+        else
+            str[i] += offset;
     }
     return str;
 }
 
 std::string decrypt(std::string str, int offset)
 {
-    
+    for (unsigned int i = 0; i < str.length(); i++)
+    {
+        // For every character in the string, add the offset, looping
+        // around the alphabet if need be.
+        // 97 = a, 122 = z
+        if (str[i] - offset < 97)
+            str[i] = str[i] - offset + 26;
+        else
+            str[i] -= offset;
+    }
+    return str;
 }
 
 int main()
@@ -64,4 +76,9 @@ int main()
             std::cout << "Invalid action\n";
             break;
     }
+    return 0;
 }
+
+// Notes:
+// There is a problem with this, in that it can't handle uppercase characters.
+// I would need to figure out a way to normalize the case of the characters.
