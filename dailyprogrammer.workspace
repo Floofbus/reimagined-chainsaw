@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="dailyprogrammer" Database="" Version="10.0.0">
   <Project Name="1e" Path="1e/1e.project" Active="No"/>
-  <Project Name="2e" Path="2e/2e.project" Active="Yes"/>
+  <Project Name="2e" Path="2e/2e.project" Active="No"/>
+  <Project Name="3e" Path="3e/3e.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="1e" ConfigName="Debug"/>
       <Project Name="2e" ConfigName="Debug"/>
+      <Project Name="3e" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="1e" ConfigName="Release"/>
       <Project Name="2e" ConfigName="Release"/>
+      <Project Name="3e" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
