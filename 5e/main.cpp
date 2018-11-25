@@ -32,7 +32,8 @@ int main()
     while (std::getline(userdb, line));
     {
         // For some reason, it only executes the while loop for the last line of the file.
-        std::cout << "a\n";
+        std::cout << line << '\n';
+        std::cout << userPass << '\n';
         if (line == userPass)
         {
             program();
