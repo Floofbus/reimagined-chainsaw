@@ -8,8 +8,8 @@ using namespace std;
 
 bool validateNumber(const string &s)
 {
-    regex tenDigit("[(]{0,1}\\d\\d\\d[)-\\.]{0,1}[\\s]{0,1}\\d\\d\\d[-\\s\\.]{0,1}\\d\\d\\d\\d");
-    regex sevenDigit("\\d\\d\\d[-\\s\\.]{0,1}\\d\\d\\d\\d");
+    regex tenDigit("[(]{0,1}\\d{3}[)-\\.]{0,1}[\\s]{0,1}\\d{3}[-\\s\\.]{0,1}\\d{4}");
+    regex sevenDigit("\\d{3}[-\\s\\.]{0,1}\\d{4}");
     if (regex_match(s, tenDigit) || regex_match(s, sevenDigit))
         return true;
     
