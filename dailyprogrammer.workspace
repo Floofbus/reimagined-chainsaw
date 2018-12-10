@@ -21,7 +21,8 @@
   <Project Name="19e" Path="19e/19e.project" Active="No"/>
   <Project Name="20e" Path="20e/20e.project" Active="No"/>
   <Project Name="21e" Path="21e/21e.project" Active="No"/>
-  <Project Name="22e" Path="22e/22e.project" Active="Yes"/>
+  <Project Name="22e" Path="22e/22e.project" Active="No"/>
+  <Project Name="23e" Path="23e/23e.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -47,6 +48,7 @@
       <Project Name="20e" ConfigName="Debug"/>
       <Project Name="21e" ConfigName="Debug"/>
       <Project Name="22e" ConfigName="Debug"/>
+      <Project Name="23e" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -72,6 +74,7 @@
       <Project Name="20e" ConfigName="Release"/>
       <Project Name="21e" ConfigName="Release"/>
       <Project Name="22e" ConfigName="Release"/>
+      <Project Name="23e" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
